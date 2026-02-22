@@ -1,1 +1,28 @@
-/* Add styles here */
+
+body {
+  background-color: #ffc0cb; /* Pink */
+  color: #ffffff; /* White */
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 2em;
+}
+
+button {
+  background-color: #ffffff; /* White */
+  color: #ffc0cb; /* Pink */
+  border: 2px solid #ffffff; /* White */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #ffc0cb; /* Pink */
+  color: #ffffff; /* White */
+}
