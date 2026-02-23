@@ -3,14 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Theme Toggle App</title>
+  <title>Calculator</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
   <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
-  
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('button pressed');">Action Button</button>
+
+  <main class="app">
+    <section class="calculator" aria-label="Calculator">
+      <div class="calc-display">
+        <div id="calc-history" class="calc-history" aria-live="polite"></div>
+        <input id="calc-display" class="calc-input" type="text" value="0" readonly aria-label="Calculator display">
+      </div>
+      <div class="calc-keys">
+        <button class="calc-key" data-action="clear">AC</button>
+        <button class="calc-key" data-action="delete">DEL</button>
+        <button class="calc-key" data-action="percent">%</button>
+        <button class="calc-key op" data-value="/">÷</button>
+
+        <button class="calc-key" data-value="7">7</button>
+        <button class="calc-key" data-value="8">8</button>
+        <button class="calc-key" data-value="9">9</button>
+        <button class="calc-key op" data-value="*">×</button>
+
+        <button class="calc-key" data-value="4">4</button>
+        <button class="calc-key" data-value="5">5</button>
+        <button class="calc-key" data-value="6">6</button>
+        <button class="calc-key op" data-value="-">−</button>
+
+        <button class="calc-key" data-value="1">1</button>
+        <button class="calc-key" data-value="2">2</button>
+        <button class="calc-key" data-value="3">3</button>
+        <button class="calc-key op" data-value="+">+</button>
+
+        <button class="calc-key zero" data-value="0">0</button>
+        <button class="calc-key" data-value=".">.</button>
+        <button class="calc-key equals" data-action="equals">=</button>
+      </div>
+    </section>
+  </main>
 
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
